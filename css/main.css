@@ -1,0 +1,183 @@
+body
+{
+	background: #ddd;
+	font-family: "Roboto";
+	text-align: center;
+	padding: 20px;
+}
+
+a
+{
+	color: #64B6B1;
+	font-weight: bold;
+}
+
+a:hover, a:focus
+{
+	text-decoration: none;
+	color: #666;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 
+{
+	padding: 0px;
+}
+
+.p10 { padding: 10px; }
+.p10h { padding: 0px 10px; }
+.p20h { padding: 0px 20px; }
+
+#logo
+{
+	height: 80px;
+	width: auto;
+	margin: 20px auto;
+}
+
+.item
+{
+	padding: 0px;
+	margin: 10px;
+	text-align: left;
+}
+
+.light .btn
+{
+	border-radius: 30px;
+	background: #ffffff;
+	border: 1px solid #ccc;
+	color: #666;
+	padding: 7px 13px;
+	margin: 0px 20px 10px;
+}
+
+.green .btn
+{
+	border-radius: 30px;
+	background: #64B6B1;
+	border: 1px solid #eee;
+	color: #fff;
+	padding: 7px 13px;
+	margin: 0px 20px 10px;
+}
+
+.light
+{
+	background: #ffffff;
+}
+
+.dark
+{
+	background: #222;
+}
+
+.green
+{
+	background: #64B6B1;
+}
+
+.item h2 
+{
+	font-size: 24px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.item .right p
+{
+	text-align: left;
+}
+
+.light h2 
+{
+	color: #444;
+}
+
+.light p
+{
+	color: #888;
+	line-height: 1.5em;
+}
+
+.green h2 
+{
+	color: #fff;
+}
+
+.green p
+{
+	color: #eee;
+	line-height: 1.5em;
+}
+
+.dark
+{
+	color: #fff;
+}
+
+.item ul
+{
+	line-height: 2em;
+}
+
+.dark ul
+{
+	color: #ddd;
+}
+
+.dark h2 
+{
+	color: #fff;
+}
+
+.dark p
+{
+	color: #eee;
+	line-height: 1.5em;
+}
+
+.dark .btn
+{
+	border-radius: 30px;
+	background: #222;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 7px 13px;
+	margin: 0px 20px 10px;
+}
+
+.dark .badge
+{
+	background: #ffffff;
+	color: #333;
+	font-weight: bold;
+}
+
+.light .badge
+{
+	background: #ccc;
+}
+
+li > ul
+{
+	margin-left: 20px;
+}
+
+.img-profile
+{
+	margin: 0px auto;
+	z-index: 100;
+	margin-top: -75px;
+	border: 7px solid #fff;
+	position: relative;
+}
+
+.profile
+{
+	text-align: center;
+}
+
+.profile h2
+{
+	text-align: center;
+}
