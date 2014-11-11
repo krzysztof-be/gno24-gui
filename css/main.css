@@ -3,6 +3,11 @@ body
 	background: #ddd;
 	font-family: "Quando";
 	text-align: center;
+	padding: 0px;
+}
+
+.wrapper
+{
 	padding: 20px;
 }
 
@@ -24,6 +29,7 @@ a:hover, a:focus
 }
 
 .m0 { margin: 0px; }
+.m10 { margin: 10px; }
 
 .p0 { padding: 0px; }
 .p10 { padding: 10px; }
@@ -34,6 +40,16 @@ a:hover, a:focus
 .p20 { padding: 20px; }
 .p1020 { padding: 10px 20px; }
 .p2010 { padding: 20px 10px; }
+
+.p40t {padding-top: 40px;}
+
+.p4020 {
+	padding: 40px 20px;
+}
+
+.p30 { padding: 30px; }
+.p40 { padding: 40px; }
+
 #logo
 {
 	height: 80px;
@@ -46,7 +62,7 @@ a:hover, a:focus
 	padding: 0px;
 	margin: 10px;
 	text-align: left;
-	border-radius: 3px;
+	box-shadow: 0px 2px 1px 0px #bbb;
 }
 
 .light .btn
@@ -67,6 +83,11 @@ a:hover, a:focus
 	color: #fff;
 	padding: 7px 13px;
 	margin: 0px 20px 10px;
+}
+
+.carousel .btn
+{
+
 }
 
 .blue .btn
@@ -273,6 +294,7 @@ li > ul
 	margin: 0px 10px 10px;
 	text-align: left;
 	padding: 0px 30px 30px;	
+	box-shadow: 0px 2px 1px 0px #409287;
 }
 
 .comments .comment
@@ -289,35 +311,36 @@ li > ul
 	color: #888;
 }
 
-.post
+.post, .event
 {
 	background: white;
 	margin: 10px 10px 0px;
 	text-align: center;
 	padding: 20px 30px;
 	padding: 0px;
+	box-shadow: 0px 2px 1px 0px #409287;
 }
 
-.post h1
+.post h1, .event h1
 {
 	font-size: 26px;
 	text-transform: uppercase;
 	font-weight: 600;
 }
 
-.post h4
+.post h4, .event h4
 {
 	font-size: 15px;
 	color: #ccc;
 	padding-top: 5px;
 }
 
-.post h4 > span
+.post h4 > span, .event h4 > span
 {
 	color: #888 !important;
 }
 
-.post .content
+.post .content, .event .content
 {
 	font-size: 16px;
 	line-height: 2.3em;	
@@ -327,19 +350,19 @@ li > ul
 	text-align: left;
 }
 
-.post .content p
+.post .content p, .event .content p
 {
 	margin: 10px 0px;
 }
 
 @media(max-width: 600px)
 {
-	body
+	.wrapper
 	{
 		padding: 0px;
 	}
 
-	.item, .form, .post, .comments
+	.m10, .item, .form, .post, .comments, .event
 	{
 		margin: 0px;
 	}
@@ -347,7 +370,7 @@ li > ul
 
 @media(min-width: 601px) and (max-width: 1000px)
 {
-	body
+	wrapper
 	{
 		padding: 50px;
 	}
@@ -359,7 +382,7 @@ li > ul
 	padding-top: 100px;
 }
 
-.post .content img
+.post .content img, .event .content img
 {
 	width: 100%;
 	height: auto;
@@ -379,11 +402,93 @@ width: 100% !important;
 height: 100% !important;
 }
 
+ .google-maps-small {
+position: relative;
+padding-bottom: 60%; // This is the aspect ratio
+height: 0;
+overflow: hidden;
+}
+.google-maps-small iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
 
 
-/* Carousel base class */
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar ul {
+	margin-top: 40px;
+}
+
+.navbar-inverse {
+	padding-bottom: 20px;
+	padding-top: 0px;
+	height: 150px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.navbar-inverse {
+	background-color: #64B6B1;
+	border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-inverse .btn
+{
+	 margin: 5px 10px;
+	 height: 30px;
+	 padding: 5px 10px;
+	 line-height: 22px !important;
+}
+
+
+.carousel-indicators
+{
+	text-align: right;
+}
+
+.carousel-indicators li,.carousel-indicators li.active 
+{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border-color: #aaa;
+	border-width: 1px;
+}
+
+.carousel-indicators li.active 
+{
+	background: #eee;
+}
 .carousel {
-  height: 400px;
+  height: auto;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -392,7 +497,7 @@ height: 100% !important;
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 400px;
+  height: auto;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -400,7 +505,7 @@ height: 100% !important;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 400px;
+  height: auto;
 }
 
 .carousel h1
@@ -411,4 +516,119 @@ height: 100% !important;
 .carousel-caption
 {
 	top: 20px;
+}
+
+.share .btn
+{
+	font-size: 15px;
+	border-radius: 40px;
+	background: none;
+	border: 1px solid #ccc;
+	color: #777;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	padding: 5px;
+}
+
+.logo
+{
+	background: #64B6B1;
+	height: 400px;
+	text-align: center;
+	padding: 40px;
+}
+
+#logo
+{
+	margin: 0px auto 70px;
+	height: 150px !important;
+	width: auto;
+	margin-top: -20px;
+}
+
+.carousel
+{
+	margin: 0px;
+}
+
+
+body {
+	background: #64B6B1;
+}
+
+.dark, .green, .blue
+{
+	box-shadow: 0px 2px 1px 0px #207267;
+}
+
+.item, .form
+{
+	box-shadow: 0px 2px 1px 0px #409287;
+}
+
+.navbar-inverse {
+	background: #46433a;
+	background: #64B6B1;
+	border: none;
+	box-shadow: 0px 2px 1px 0px #444;
+	border: none;
+	box-shadow: none;
+}
+
+.item
+{
+	position: relative;
+}
+
+.ribbon-wrapper-green {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-green {
+  font-size: 10px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 10px 0;
+  left: -25px;
+  top: 10px;
+  width: 150px;
+  background-color: #D9534F;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}​
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form
+{
+	border: none;
+	background: #64B6B1 !important;
 }

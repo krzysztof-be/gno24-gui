@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>gno24.pl</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Quando:400,500,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -15,15 +16,56 @@
   </head>
   <body>
 
-    <div class="wrapper">
+
+  <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            
+            <img src="img/logo.png" id="logo">
+
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav">
+          <li>
+
+
+             <input type="text" placeholder="szukaj..." class="form-control" id="search">
+
+          </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+                             <li>
+                  <img src="http://placehold.it/32x32" class="img-circle"> Krzysztof
+
+                  <a href="#" class="btn btn-danger pull-right">
+                    <i class="glyphicon glyphicon-off"></i>
+                  </a>
+                
+               </li>
+                       </ul>
+
+                       <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
 
 
 
+    <div class="wrapper container">
 
-      <div class="col-md-9 col-lg-8 ">
+   
+    <div class="col-md-8 col-lg-8 car">
 
 
-    <div id="myCarousel" class="item carousel slide" data-ride="carousel">
+    <div id="myCarousel" class=" carousel slide " data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -31,62 +73,165 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
+      
+
         <div class="item active">
-          <img src="http://lorempixel.com/640/320">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-            </div>
+
+        <div class=" light">
+
+          <div class="col-sm-6 left">
+
+            <img src="http://lorempixel.com/640/640/sports" class="img-responsive">
+
           </div>
-        </div>
-        <div class="item">
-          <img src="http://lorempixel.com/640/320/business">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-            </div>
+
+          <div class="col-sm-6 right ">
+
+            <h2 class="p20h">Nagłówek wpisu</h2>
+
+            <p class="p20h">Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
+
+            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
+
           </div>
+
+          <div class="clearfix"></div>
+
         </div>
-        <div class="item">
-          <img src="http://lorempixel.com/640/320/people">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-            </div>
+
+      </div>
+      
+
+        <div class="item ">
+
+        <div class=" blue">
+
+          <div class="col-sm-6 left">
+
+            <img src="http://lorempixel.com/640/640/sports" class="img-responsive">
+
           </div>
+
+          <div class="col-sm-6 right ">
+
+            <h2 class="p20h">Nagłówek wpisu</h2>
+
+            <p class="p20h">Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
+
+            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
+
+          </div>
+
+          <div class="clearfix"></div>
+
         </div>
+
+      </div>
+      
+
+        <div class="item ">
+
+        <div class=" dark">
+
+          <div class="col-sm-6 left">
+
+            <img src="http://lorempixel.com/640/640/sports" class="img-responsive">
+
+          </div>
+
+          <div class="col-sm-6 right ">
+
+            <h2 class="p20h">Nagłówek wpisu</h2>
+
+            <p class="p20h">Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
+
+            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+
+
+       
       </div>
       
     </div><!-- /.carousel -->
 
-    </div>
+
+    <div class="row m0">
+
+     <div class="col-md-6 col-lg-6 ">
+
+        <div class="item dark">
+
+          <div class="p10">
+
+            <h2 class="p20h">Nagłówek wpisu</h2>
+
+            <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
 
 
+            <div class="clearfix"></div>
 
-      <div class="col-md-9 col-lg-8">
+          </div>
 
-        <div class="item light profile">
+          <div class="">
 
-<div class="google-maps">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
-</div>
+            <img src="http://lorempixel.com/640/320/fashion" class="img-responsive">
 
+          </div>
 
-
-          <img src="http://lorempixel.com/150/150/people" class="img-responsive img-circle img-profile">
-
-          <h2>Młyn</h2>
-          <h5 class="text-muted">Klub muzyczny</h5>
-
-          <br><a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i> &nbsp;Obserwuj miejsce</a><br><br>
+          <div class="clearfix"></div>
 
         </div>
 
       </div>
 
-      <div class="col-md-3 col-lg-4">
+
+      <div class="col-md-6 col-lg-6 ">
+
+        <div class="item light">
+
+          <div class="">
+
+            <img src="http://lorempixel.com/640/320/technics" class="img-responsive">
+
+          </div>
+
+          <div class="p10">
+
+            <h2 class="p20h">Nagłówek wpisu</h2>
+
+            <p class="p20h">Lorem ipsum <a href="#">dolor sit amet</a> enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
+
+            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
+
+            <div class="clearfix"></div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+
+
+      </div>
+
+    </div>
+
+
+   
+  <div class="col-md-3 col-lg-4">
 
         <div class="item light profile">
+
+         <div class="ribbon-wrapper-green"><div class="ribbon-green">&nbsp;&nbsp;POLECANE</div></div>
 
          <img src="http://lorempixel.com/1336/600/abstract" class="img-responsive">
 
@@ -101,23 +246,15 @@
 
       </div>
 
-      <div class="col-md-6 col-lg-6 ">
 
-        <div class="item light">
+      <div class="col-md-4 col-lg-4 ">
 
-          <div class="col-sm-6 left">
+        <div class="item blue">
 
-            <img src="http://lorempixel.com/640/640/abstract" class="img-responsive">
+        
+          <div class="">
 
-          </div>
-
-          <div class="col-sm-6 right ">
-
-            <h2 class="p20h">Nagłówek wpisu</h2>
-
-            <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. </p>
-
-            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
+            <img src="http://lorempixel.com/640/240/abstract" class="img-responsive">
 
           </div>
 
@@ -128,7 +265,31 @@
       </div>
 
 
-      <div class="col-md-6 col-lg-6 ">
+      <div class="col-md-4 col-lg-4 ">
+
+        <div class="item blue">
+
+        
+          <div class="">
+
+            <img src="http://lorempixel.com/640/240/business" class="img-responsive">
+
+          </div>
+
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+
+
+
+
+    <div class="clearfix"></div>
+
+
+
+    <div class="col-md-6 col-lg-6 ">
 
         <div class="item blue">
 
@@ -184,30 +345,10 @@
       </div>
 
 
-      <div class="col-md-6 col-lg-6 ">
-
-        <div class="item dark">
-
-          <div class="p10">
-
-            <h2 class="p20h">Nagłówek wpisu</h2>
-
-            <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
-
-            <a href="#" class="btn btn-primary pull-right">Czytaj ...</a>
-
-            <div class="clearfix"></div>
-
-          </div>
-
-          <div class="clearfix"></div>
-
-        </div>
-
-      </div>
+    <div class="clearfix"></div>
 
 
-      <div class="col-md-6 col-lg-6 ">
+    <div class="col-md-6 col-lg-6 ">
 
         <div class="item light">
 
@@ -230,93 +371,7 @@
       </div>
 
 
-      <div class="col-md-3 col-lg-3 ">
-
-        <div class="item dark">
-
-          <div class="p10">
-
-            <h2 class="p20h">Nagłówek wpisu</h2>
-
-            <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
-
-
-            <div class="clearfix"></div>
-
-          </div>
-
-          <div class="">
-
-            <img src="http://lorempixel.com/640/640/fashion" class="img-responsive">
-
-          </div>
-
-          <div class="clearfix"></div>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-md-3 col-lg-3 ">
-
-        <div class="item light">
-
-          <div class="">
-
-            <img src="http://lorempixel.com/640/640/technics" class="img-responsive">
-
-          </div>
-
-          <div class="p10">
-
-            <h2 class="p20h">Nagłówek wpisu</h2>
-
-            <p class="p20h">Lorem ipsum <a href="#">dolor sit amet</a> enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
-
-            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
-
-            <div class="clearfix"></div>
-
-          </div>
-
-          <div class="clearfix"></div>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-md-3 col-lg-3 ">
-
-        <div class="item green">
-
-          <div class="">
-
-            <img src="http://lorempixel.com/640/320/technics" class="img-responsive">
-
-          </div>
-
-          <div class="p10">
-
-            <h2 class="p20h">Nagłówek wpisu</h2>
-
-            <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
-
-            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
-
-            <div class="clearfix"></div>
-
-          </div>
-
-          <div class="clearfix"></div>
-
-        </div>
-
-      </div>
-
-
-      <div class="col-md-3 col-lg-3 ">
+      <div class="col-md-6 col-lg-6 ">
 
         <div class="item blue">
 
@@ -326,15 +381,9 @@
 
             <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
 
-            <a href="#" class="btn btn-primary pull-left">Czytaj ...</a>
+            <a href="#" class="btn btn-primary pull-right">Czytaj ...</a>
 
             <div class="clearfix"></div>
-
-          </div>
-
-          <div class="">
-
-            <img src="http://lorempixel.com/640/400/abstract" class="img-responsive">
 
           </div>
 
@@ -345,7 +394,99 @@
       </div>
 
 
-      <div class="col-md-3 col-lg-3 ">
+          <div class="clearfix"></div>
+
+
+    <div class="col-md-6 col-lg-6 ">
+
+        <div class="item dark">
+
+          <div class="p10">
+
+            <h2 class="p20h">Nagłówek wpisu</h2>
+
+            <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
+
+            <a href="#" class="btn btn-primary pull-right">Czytaj ...</a>
+
+            <div class="clearfix"></div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-6 ">
+
+        <div class="item light">
+
+          <div class="p10">
+
+            <h2 class="p20h">Nagłówek wpisu</h2>
+
+            <p class="p20h">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
+
+            <a href="#" class="btn btn-primary pull-right">Czytaj ...</a>
+
+            <div class="clearfix"></div>
+
+          </div>
+
+          <div class="clearfix"></div>
+
+        </div>
+
+      </div>
+
+
+          <div class="clearfix"></div>
+
+
+      <div class="col-md-9 col-lg-8">
+
+        <div class="item light profile">
+
+<div class="google-maps">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
+</div>
+
+
+
+          <img src="http://lorempixel.com/150/150/people" class="img-responsive img-circle img-profile">
+
+          <h2>Młyn</h2>
+          <h5 class="text-muted">Klub muzyczny</h5>
+
+          <br><a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i> &nbsp;Obserwuj miejsce</a><br><br>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-3 col-lg-4">
+
+        <div class="item light profile">
+
+         <img src="http://lorempixel.com/1336/600/abstract" class="img-responsive">
+
+          <img src="http://lorempixel.com/150/150/people" class="img-responsive img-circle img-profile">
+
+          <h2>Młyn</h2>
+          <h5 class="text-muted">Klub muzyczny</h5>
+
+          <br><a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i> &nbsp;Obserwuj miejsce</a><br><br>
+
+        </div>
+
+      </div>
+
+   
+
+      <div class="col-md-4 col-lg-4 ">
 
         <div class="item dark">
 
@@ -745,6 +886,209 @@
               
             </div><p class="comment">Lorem ipsum, tresc komentarza. Bla bla bla.</p>
           </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col-md-8 col-lg-7">
+
+        <div class="event">
+
+          <img src="http://lorempixel.com/1200/600/abstract" class="img-responsive img-cover">
+
+
+          <h1 class=" ">Nazwa wydarzenia</h1>
+          <h4><span>11.11.2014</span> / <span>18:00</span> /  <span>Klub muzyczny <b>Mlyn</b></span> / <span>Informacje</span></h4>
+
+
+          <br>
+          <a href="#" class="btn btn btn-danger">
+
+            <i class="glyphicon glyphicon-eye-open"></i> Obserwuj to wydarzenie
+
+          </a>
+          <div class="clearfix"></div>
+
+          <br>
+
+
+          <div class="share">
+
+            <ul class="list-unstyled list-inline">
+
+              <li><a href="#" class="btn btn-sm btn-primary">
+                
+                <i class="fa fa-facebook"></i>
+
+              </a></li>
+
+              <li><a href="#" class="btn btn-sm btn-primary">
+                
+                <i class="fa fa-twitter"></i>
+
+              </a></li>
+
+              <li><a href="#" class="btn btn-sm btn-primary">
+                
+                <i class="fa fa-google-plus"></i>
+
+              </a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="content">
+
+            </p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.</p>
+
+
+            <img src="http://lorempixel.com/1200/600/abstract">
+
+            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam. Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus. Sed vel lectus. Ut sagittis, ipsum dolor quam.</p>
+            
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+
+        <div class=" comments p20" id="comments">
+
+        <div class="alert alert-success">
+
+          Dodano komentarz
+
+        </div>
+
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Tresc komentarza">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">skomentuj</button>
+        </span>
+      </div><!-- /input-group -->
+
+        <div class="clearfix"></div>
+
+            <hr><div class="media p20h">
+            <a class="media-left" href="#">
+              <img src="http://placehold.it/40x40" class="img-circle">
+             </a>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p class="text-muted">4 godziny temu</p>
+              
+            </div><p class="comment">Lorem ipsum, tresc komentarza. Bla bla bla.</p>
+          </div>
+
+            <hr><div class="media p20h">
+            <a class="media-left" href="#">
+              <img src="http://placehold.it/40x40" class="img-circle">
+             </a>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p class="text-muted">4 godziny temu</p>
+              
+            </div><p class="comment">Lorem ipsum, tresc komentarza. Bla bla bla.</p>
+          </div>
+
+            <hr><div class="media p20h">
+            <a class="media-left" href="#">
+              <img src="http://placehold.it/40x40" class="img-circle">
+             </a>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p class="text-muted">4 godziny temu</p>
+              
+            </div><p class="comment">Lorem ipsum, tresc komentarza. Bla bla bla.</p>
+          </div>
+
+            <hr><div class="media p20h">
+            <a class="media-left" href="#">
+              <img src="http://placehold.it/40x40" class="img-circle">
+             </a>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p class="text-muted">4 godziny temu</p>
+              
+            </div><p class="comment">Lorem ipsum, tresc komentarza. Bla bla bla.</p>
+          </div>
+
+            <hr><div class="media p20h">
+            <a class="media-left" href="#">
+              <img src="http://placehold.it/40x40" class="img-circle">
+             </a>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p class="text-muted">4 godziny temu</p>
+              
+            </div><p class="comment">Lorem ipsum, tresc komentarza. Bla bla bla.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+       <div class="col-md-3 col-lg-4">
+
+        <div class="item light profile">
+
+         <img src="http://lorempixel.com/1336/600/abstract" class="img-responsive">
+
+          <img src="http://lorempixel.com/150/150/people" class="img-responsive img-circle img-profile">
+
+          <h2>Młyn</h2>
+          <h5 class="text-muted">Klub muzyczny</h5>
+
+          <br><a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i> &nbsp;Obserwuj miejsce</a><br><br>
+
+        </div>
+
+      </div>
+
+
+
+       <div class="col-md-3 col-lg-4">
+
+        <div class="item dark profile">
+
+        <h4 class="p20">Godziny otwarcia</h4>
+        
+        <ul style="text-align: left">
+          <li><b>pn-pt</b> 10:00-20:00</li>
+          <li><b>sb</b> 12:00-18:00</li>
+          <li><b>nd</b> nieczynne</li>
+        </ul>
+
+        <br>
+
+        </div>
+
+      </div>
+
+
+       <div class="col-md-3 col-lg-4">
+
+        <div class="item light profile">
+
+        <div class="google-maps-small">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
+        </div>
+        <br>
+        <p class="p10">Roosvelta</p>
+        <br>
+
 
         </div>
 
