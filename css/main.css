@@ -23,10 +23,15 @@ a:hover, a:focus
 	padding: 0px;
 }
 
+.m0 { margin: 0px; }
+
+.p0 { padding: 0px; }
 .p10 { padding: 10px; }
+.p10v { padding: 10px 0px; }
 .p10h { padding: 0px 10px; }
 .p20h { padding: 0px 20px; }
-
+.p20 { padding: 20px; }
+.p1020 { padding: 10px 20px; }
 #logo
 {
 	height: 80px;
@@ -34,7 +39,7 @@ a:hover, a:focus
 	margin: 20px auto;
 }
 
-.item
+.item, .form
 {
 	padding: 0px;
 	margin: 10px;
@@ -54,7 +59,17 @@ a:hover, a:focus
 .green .btn
 {
 	border-radius: 30px;
-	background: #64B6B1;
+	background: none;
+	border: 1px solid #eee;
+	color: #fff;
+	padding: 7px 13px;
+	margin: 0px 20px 10px;
+}
+
+.blue .btn
+{
+	border-radius: 30px;
+	background: none;
 	border: 1px solid #eee;
 	color: #fff;
 	padding: 7px 13px;
@@ -74,6 +89,11 @@ a:hover, a:focus
 .green
 {
 	background: #64B6B1;
+}
+
+.blue
+{
+	background: #367296;
 }
 
 .item h2 
@@ -109,6 +129,19 @@ a:hover, a:focus
 	color: #eee;
 	line-height: 1.5em;
 }
+
+.blue h2 
+{
+	color: #fff;
+}
+
+.blue p
+{
+	color: #eee;
+	line-height: 1.5em;
+}
+
+
 
 .dark
 {
@@ -180,4 +213,41 @@ li > ul
 .profile h2
 {
 	text-align: center;
+}
+
+.login
+{
+	background: #fff;
+}
+
+.register
+{
+	background: #367296;
+	color: white;
+}
+
+.btn
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.form input[type=text], .form input[type=password]
+{
+	border-radius: 0px;
+	border: none;
+}
+
+.login input[type=text], .login input[type=password]
+{
+	
+	border: 1px solid #ddd;
+}
+
+.register input[type=text], .register input[type=password]
+{
+	
+	border: 1px solid #fff;
+	background: #367296;
+	color: #ffffff;
 }
